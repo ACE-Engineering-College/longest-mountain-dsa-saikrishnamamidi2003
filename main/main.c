@@ -5,7 +5,7 @@ int longestMountain(int arr[], int n)
    int longest = 0;
     int increase = 0, decrease = 0;
 
-    for (int i = 1; i < size; i++) {
+    for (int i = 1; i < n; i++) {
         if ((decrease && arr[i - 1] < arr[i]) || arr[i - 1] == arr[i])
             increase = decrease = 0;
 
